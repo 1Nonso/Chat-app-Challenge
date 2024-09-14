@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(270, 20%, 96%);
+  background-repeat: no-repeat;
+  background-size: 60% 55%;
+  position: relative;
+}
+
+#top-gradient {
+  width: 16rem;
+  height: 42rem;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(254, 100%, 61%));
+  border-radius: 0 0 50rem 0;
+  position: absolute;
+  top: 0;
+  left: -4rem;
+  z-index: -1;
+}
+
+#bottom-gradient {
+  width: 16rem;
+  height: 35rem;
+  background-color: hsl(270, 7%, 64%, 0.09);
+  border-radius: 50rem 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: -5rem;
+  z-index: -1;
+}
+
+#first-section {
+  background-color: white;
+  width: 18rem;
+  border-radius: 2.3rem;
+  position: relative;
+  padding: 0.6rem;
+  box-shadow: 0px 15px 50px -25px;
+}
+
+#floating-div {
+  width: 10rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  background-color: white;
+  border-radius: 20rem;
+}
+
+/* hsl(264, 100%, 61%), hsl(293, 100%, 63%) */
+
+#first-child {
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(
+    to right,
+    hsl(254, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  border-radius: 2rem 2rem 0.7rem 0.7rem;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  color: hsl(270, 20%, 96%);
+  img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    margin-right: 0.4rem;
+    border: 2px solid white;
+  }
+  span {
+    font-size: 0.7rem;
+    color: hsl(276, 100%, 81%);
+  }
+}
+
+#phone-layout {
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 2rem;
+}
+
+#second-child {
+  padding: 0.6rem;
+}
+
+.first-paras {
+  width: 12rem;
+  margin-bottom: 0.6rem;
+  border-radius: 0.7rem 0.7rem 0.7rem 0;
+  background-color: hsl(206, 6%, 79%, 0.3);
+  padding: 0.4rem;
+  color: hsl(276, 55%, 52%);
+}
+
+#img-text {
+  width: 15rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0.6rem;
+  position: relative;
+  left: 2.5rem;
+  margin-top: 1.6rem;
+  img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+  }
+}
+
+#second-paras {
+  width: 8rem;
+  left: 8rem;
+}
+
+.second-paras {
+  width: 10rem;
+  margin-bottom: 0.6rem;
+  padding: 0.4rem;
+  position: relative;
+  left: 6rem;
+  border-radius: 0.7rem 0.7rem 0 0.7rem;
+  background-color: white;
+  color: hsl(271, 15%, 43%);
+  font-size: 0.8rem;
+}
+
+.third-para {
+  width: 12rem;
+  margin-bottom: 0.7rem;
+  padding: 0.4rem;
+  border-radius: 0.7rem 0.7rem 0.7rem 0;
+  background-color: hsl(206, 6%, 79%, 0.3);
+  color: hsl(276, 55%, 52%);
+  margin-top: 1.6rem;
+}
+
+.div-paras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+  height: 3rem;
+  padding: 0 1rem;
+  color: hsl(270, 20%, 96%);
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(254, 100%, 61%)
+  );
+  margin-bottom: 0.7rem;
+  border-radius: 1rem 1rem 1rem 0;
+}
+
+#radio-button {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: red;
+}
+
+#message-div {
+  height: 2.5rem;
+  display: flex;
+  margin-top: 1.4rem;
+  padding: 0 0.4rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: #fff;
+  #message-para {
+    margin-left: 1rem;
+  }
+}
+
+#message-div::after {
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  border-radius: 3rem;
+  background-color: black;
+}
+
+#second-section {
+  margin-top: 5rem;
+  text-align: center;
+  width: 19rem;
+  h1 {
+    font-size: 2.6rem;
+    color: hsl(271, 36%, 24%);
+  }
+  p {
+    margin-top: 1rem;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    color: hsl(270, 7%, 64%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-size: 30% 70%;
+  }
+
+  #second-section {
+    text-align: left;
+    width: 27rem;
+  }
+
+  #top-gradient {
+    width: 17rem;
+    height: 44rem;
+    border-radius: 0 0 9rem 9rem;
+    left: 0;
+  }
+
+  #bottom-gradient {
+    width: 18rem;
+    height: 35rem;
+    background-color: hsl(270, 7%, 64%, 0.03);
+    border-radius: 20rem 15rem 0 0;
+    bottom: 0;
+    right: 0;
+  }
+}
